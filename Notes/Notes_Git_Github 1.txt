@@ -1,0 +1,115 @@
+Dev/test - 2 week sprint --> 
+
+Dev / Test QA / UAT / PRE Prod / Prod -live -->(Server / cloud )
+Initial work --> Local m/c --> GitHub Repositry-(proj repo)
+GIT --> 
+
+156.128.199.180:portno --> alias name --> amzon.com (endusers)
+dev --> 189.128.199.180:portno --> dev.amzon.com
+QA--> qa.amazon.com
+
+
+
+Local (file/folder c:/username )--> Local repo  ---> Remote repo (GitHub)
+
+
+Activity:
+Local repository --> commit 
+Remote repository --> push
+
+Devops
+Build creation 
+Run Automation
+Build certification 
+
+Local m/c (actual code ) -->(staging) Local repo (commit)--> remote repo GitHub 
+
+
+Prereq:
+Git installation - follow steps in pdf --> https://git-scm.com/install/
+Create an account with GitHub - https://github.com/signup?source=login
+
+cmd prompt --> git --version (version no) then git is installed .
+
+Working directory --> staging --> Git repo (commit) --> Remote repo (push)
+
+C:\Users\532252\IdeaProjects\sample1
+git bash 
+cd /c/Users/532252/IdeaProjects/sample1
+
+1) git init 
+
+(hidden file git repo created in project location)
+Proj loc--> click on View --> show --> hidden files --> able to see .git folder
+
+2) provided user info to git repo. (one time)
+ 
+	git config --global user.name "Mahalatchumi"
+    	git config --global user.email "Mahalatchumi.BR@cognizant.com"
+
+3) git status --> shows untracked files 
+
+4) git add -A --> add all the untracked files to local repo
+
+5)  git add filename
+    git add *.java
+    git add foldername
+
+6)git commit -m "add the proj code to repo"
+
+7)$ git status
+On branch master
+nothing to commit, working tree clean
+
+8) GitHub --> repositories --> new repo --> give same name as project name 
+repo url : https://github.com/Mahalatchumi/sample1.git (copy from ssh)
+
+9)connect local repository with remote rep.(One time)
+	git remote add origin "https://github.com/Mahalatchumi/sample1.git"
+
+10) push the code to the new remote repo
+git push origin master
+
+master --> branch --> login_feature , Forgetpassword_Feature
+
+Master --> dev /qa/uat /feature 12/13/14
+
+------------------------------------- after first commit -------------------
+
+11. add a file in GitHub repository to show changes from others into common repo 
+ git pull https://github.com/Mahalatchumi/sample1.git
+
+12. refresh your local solution to view the pulled files 
+
+13. make changes in the local repo add or edit a file to see your next changes reflecting 
+
+git add -A
+git commit -m "new changes in added"
+git push origin master
+
+--------------------------- clone existing project -----------------------
+1. Add/create a new repo in the GitHub 
+
+2. goto file location where you need to clone the new project 
+cd /C/Users/532252/IdeaProjects/
+
+3. clone the new repo first time 
+git clone "https://github.com/Mahalatchumi/Project2.git"
+
+4. After you make changes to the cloned project , push the code changes to the repo 
+git add -A  // dont do all --> give file name separately
+git commit -m "new changes in added"
+git push origin master
+
+------------------------- code conflict --------------
+
+1. when multiple team members work on the same file there will be conflicts while pushing the code 
+
+create branch -->  push to your branch --> merge all branches --> conflict --> resolve 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+

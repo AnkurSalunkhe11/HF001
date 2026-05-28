@@ -1,0 +1,118 @@
+
+ What is JSON? 
+
+JSON stands for JavaScript Object Notation.
+
+It is a simple text format used to store and transfer data between:
+
+   Applications
+   Servers and browsers
+   Test automation tools
+
+Even though it has JavaScript in the name, JSON works with almost all programming languages (Java, Python, C, JavaScript, etc.).
+
+
+ Why is JSON used?
+
+JSON is used because it is:
+
+   Easy to read
+   Easy to write
+   Lightweight
+   Language‑independent
+   Widely used in real‑time applications, APIs, and automation testing
+
+Example :
+
+{
+  "username": "tomsmith",
+  "password": "SuperSecretPassword!",
+  "expected": "success"
+}
+
+
+ Basic JSON Rules 
+
+1.  Data is written in key–value pairs
+2.  Keys and values are separated by `:`
+3.  Data items are separated by `,`
+4.  JSON starts with `{` and ends with `}`
+5.  Keys must be in double quotes
+
+
+
+ JSON Syntax 
+
+{
+  "name": "Ravi",
+  "age": 25,
+  "isEmployee": true
+}
+
+
+| Part     | Meaning        |
+| -------- | -------------- |
+| "name"   | key            |
+| "Ravi"   | value (string) |
+| `25`     | number         |
+| `true`   | boolean        |
+
+
+
+ Common Data Types in JSON
+
+| Type    | Example             |
+| ------- | ------------------- |
+| String  | "India"             |
+| Number  | 100                 |
+| Boolean | true / false        |
+| Array   | [ "A", "B", "C" ]   |
+| Object  | { "id": 101 }       |
+
+
+
+ JSON Array Example
+
+Used when there are multiple values.
+
+{
+  "colors": ["red", "green", "blue"]
+}
+
+
+Here:
+
+   `colors` is a key
+   Value is an array
+
+
+ JSON Object Inside Object
+
+
+{
+  "user": {
+    "username": "admin",
+    "password": "admin123"
+  }
+}
+
+
+ JSON in Automation Testing 
+{
+  "login": {
+    "username": "tomsmith",
+    "password": "SuperSecretPassword!"
+  }
+}
+
+
+ Is JSON a Programming Language?
+ NO,  JSON is only a data format
+
+ It cannot run logic, loops, or conditions.
+
+ One‑Line Interview Definition
+ “JSON is a lightweight, text‑based data format used for storing and transmitting structured data between applications.”
+
+
+
